@@ -33,16 +33,16 @@ public class GenericsAList<T> {
             return;
         }
 
-        // Case 1: position == size - 1
+        //case 1: position == size - 1
         if (position == size - 1) {
             // Decrease size by 1
             size--;
             return;
         }
 
-        // Case 2: position < size - 1
+        //case 2: position < size - 1
         for (int i = position; i < size - 1; i++) {
-            // Shift back all elements at index y, where y > x and y < size - 1
+            //shift back all elements at index y, where y > x and y < size - 1
             elements[i] = elements[i + 1];
         }
         size--;
